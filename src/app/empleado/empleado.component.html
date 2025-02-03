@@ -1,0 +1,19 @@
+
+<ul>
+    @if (trabajadorExterno) {
+        <button (click)="cambiarExterno(false)">Mostrar internos</button>
+        <li>{{empleadoExt.nombre}}</li>
+    }@else{
+        <button (click)="cambiarExterno(true)">Mostrar externos</button>
+        <li>Lista de trabajadores internos</li>
+    }
+</ul>
+
+@for (empleado of trabajador; track empleado.id) {
+    <li>{{empleado.nombre}}</li>
+    @if (empleado.contratado){
+        <li>Trabajador contratado</li>
+    }@else{
+        <li>Trabajador NO contratado</li>
+    }
+}

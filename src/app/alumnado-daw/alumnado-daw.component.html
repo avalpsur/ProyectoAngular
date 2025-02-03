@@ -1,0 +1,9 @@
+<button (click)="mostrarCurso(1)">Mostrar alumnos de 2</button>
+<button (click)="mostrarCurso(2)">Mostrar alumnos de 1</button>
+<div>
+    @for (alumno of alumnadoDAW; track alumno) {
+        @if (alumno.curso === cursoSeleccionado) {
+            <p>{{alumno.nombre}}</p>
+        }
+    }
+</div>
