@@ -3,5 +3,16 @@
       <h1>Bienvenido al Mundo de los Cómics</h1>
       <p>Descubre los últimos lanzamientos y personajes épicos.</p>
     </div>
-  </section>
+</section>
+
+<section class="cards-container">
+  <div class="card" *ngFor="let comic of comics">
+    <img [src]="comic.image" alt="{{ comic.title }}" class="card-img">
+    <div class="card-content">
+      <h2>{{ comic.title }}</h2>
+      <p class="date">📅 {{ comic.date }}</p>
+    </div>
+  </div>
+</section>
+
   
