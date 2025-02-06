@@ -1,0 +1,28 @@
+.nav-bar {
+    background: #333;
+    padding: 15px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    margin: 0 15px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  nav a:hover {
+    color: #ff4500;
+  }
+  
